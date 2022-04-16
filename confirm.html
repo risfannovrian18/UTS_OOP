@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Klik tombol button dibawah untuk menampilkan confirm box.</p>
+
+    <button onclick="myFunction()">Confirm Alert</button>
+
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        let text = "Apakah Anda yakin untuk menghapus data ini.";
+        if (confirm(text) == true) {
+          text = "You pressed OK!";
+        } else {
+          text = "You canceled!";
+        }
+        document.getElementById("demo").innerHTML = text;
+      }
+    </script>
+  </body>
+</html>
